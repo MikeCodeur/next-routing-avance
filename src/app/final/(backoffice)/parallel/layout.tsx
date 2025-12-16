@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, {Suspense} from 'react'
 
 export default async function Layout({
@@ -10,6 +9,7 @@ export default async function Layout({
   editor: React.ReactNode
   admin: React.ReactNode
 }) {
+  // eslint-disable-next-line react-hooks/purity
   const role = Math.random() > 0.5 ? 'admin' : 'editor'
 
   return (
